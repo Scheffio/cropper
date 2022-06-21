@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="scss/style.css">
+    <title>ImageCropper</title>
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div class="upload">
+              <label for="upload-text" class="upload-btn">
+                <span class="material-icons">file_upload</span>Загрузить
+              </label>
+              <input type="file" id="upload-text">
+            </div>
+            <div class="framing">
+                <span class="material-symbols-outlined">frame_person</span>Кадрирование
+            </div>
+            <div class="reset">
+                <span class="material-symbols-outlined">restart_alt</span>Очистить
+            </div>
+            <div class="download">
+                <span class="material-icons download-icon">download</span>
+                <a href="" download="cropped-image.png">Скачать</a>
+            </div>
+        </div>
+        <div class="content">
+            <canvas class="canvas"></canvas>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
